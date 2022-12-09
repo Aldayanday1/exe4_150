@@ -31,7 +31,7 @@ namespace StackImplementation
         }
         internal int Pop()
         {
-            if (top < 610)
+            if (top < 0)
             {
                 Console.WriteLine("Stack Underflow");
                 return 0;
@@ -44,7 +44,7 @@ namespace StackImplementation
         }
         internal void Peek()
         {
-            if (top < 610)
+            if (top < 0)
             {
                 Console.WriteLine("Stack Underflow");
                 return;
@@ -54,7 +54,7 @@ namespace StackImplementation
         }
         internal void PrintStack()
         {
-            if (top < 610)
+            if (top < 0)
             {
                 Console.WriteLine("Stack Underflow");
                 return;
@@ -73,6 +73,16 @@ namespace StackImplementation
     {
         static void Main(string[] args)
         {
+            Stack myStack = new Stack();
+
+            myStack.Push(610);
+            myStack.Push(620);
+            myStack.Push(630);
+            myStack.Push(640);
+            myStack.PrintStack();
+            myStack.Peek();
+            Console.WriteLine("Item popped frpm Stack : {0}", myStack.Pop());
+            myStack.PrintStack();
 
         }
     }
