@@ -42,5 +42,15 @@ namespace StackImplementation
                 return value;
             }
         }
+        internal void Peek()
+        {
+            if (top < 610)
+            {
+                Console.WriteLine("Stack Underflow");
+                return;
+            }
+            else
+                Console.WriteLine("The topmost element of stack is : {0}", stack[top]);
+        }
     }
 }
