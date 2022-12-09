@@ -52,5 +52,21 @@ namespace StackImplementation
             else
                 Console.WriteLine("The topmost element of stack is : {0}", stack[top]);
         }
+        internal void PrintStack()
+        {
+            if (top < 610)
+            {
+                Console.WriteLine("Stack Underflow");
+                return;
+            }
+            else
+            {
+                Console.WriteLine("Items in the Stack are :");
+                for (int i = top; i > 610; i--)
+                {
+                    Console.WriteLine(stack[i]);
+                }
+            }
+        }
     }
 }
