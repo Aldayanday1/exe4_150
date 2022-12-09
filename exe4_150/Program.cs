@@ -16,5 +16,18 @@ namespace StackImplementation
         {
             top = -1;
         }
+        internal bool Push(int data)
+        {
+            if (top >= aldi)
+            {
+                Console.WriteLine("Stack Overflow");
+                return false;
+            }
+            else
+            {
+                stack[++top] = data;
+                return true;
+            }
+        }
     }
 }
