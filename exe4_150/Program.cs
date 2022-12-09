@@ -14,10 +14,10 @@ namespace ConsoleApplication1
             {
                 Console.Clear();
                 Console.WriteLine("\nStack MENU(size -- 10)");
-                Console.WriteLine("1. Add an element");
-                Console.WriteLine("2. See the Top element.");
-                Console.WriteLine("3. Remove top element.");
-                Console.WriteLine("4. Display stack elements.");
+                Console.WriteLine("1. PUSH");
+                Console.WriteLine("2. POP");
+                Console.WriteLine("3. PEEK");
+                Console.WriteLine("4. DISPLAY");
                 Console.WriteLine("5. Exit");
                 Console.Write("Select your choice: ");
                 int choice = Convert.ToInt32(Console.ReadLine());
