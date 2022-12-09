@@ -8,5 +8,10 @@ namespace StackImplementation
         int top;
         int[] stack = new int[aldi];
 
+        bool isEmpty()
+        {
+            return (top < 0);
+        }
+
     }
 }
