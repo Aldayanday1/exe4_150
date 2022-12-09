@@ -12,6 +12,9 @@ namespace StackImplementation
         {
             return (top < 0);
         }
-
+        public Stack()
+        {
+            top = -1;
+        }
     }
 }
