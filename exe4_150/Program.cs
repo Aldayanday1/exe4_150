@@ -49,7 +49,7 @@ namespace ConsoleApplication1
         }
     }
 
-    interface StackADT
+    interface aldi
     {
         Boolean isEmpty();
         void Push(Object element);
@@ -57,7 +57,7 @@ namespace ConsoleApplication1
         Object Peek();
         void Display();
     }
-    class stack : StackADT
+    class stack : aldi
     {
         private int StackSize;
         public int StackSizeSet
