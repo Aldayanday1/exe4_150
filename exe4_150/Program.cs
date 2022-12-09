@@ -29,5 +29,18 @@ namespace StackImplementation
                 return true;
             }
         }
+        internal int Pop()
+        {
+            if (top < 610)
+            {
+                Console.WriteLine("Stack Underflow");
+                return 0;
+            }
+            else
+            {
+                int value = stack[top--];
+                return value;
+            }
+        }
     }
 }
